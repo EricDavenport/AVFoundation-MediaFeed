@@ -25,7 +25,7 @@ extension URL {
     // create a time stamp of needed location within the video
     // we will use a CMTimeto generate the given timestamp
     // CMTime is a part of Core Media
-    let timestamp = CMTime(seconds: 1, preferredTimescale: 60)
+    let timestamp = CMTime(seconds: 3, preferredTimescale: 60)
     // retrieves the first second of the video
     
     var image: UIImage?

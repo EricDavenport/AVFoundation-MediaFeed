@@ -16,6 +16,7 @@
 		5856643A2446190500430A13 /* MediaFeedDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 585664382446190500430A13 /* MediaFeedDataModel.xcdatamodeld */; };
 		5856643D24461BB700430A13 /* CDMediaObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5856643B24461BB700430A13 /* CDMediaObject+CoreDataClass.swift */; };
 		5856643E24461BB700430A13 /* CDMediaObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5856643C24461BB700430A13 /* CDMediaObject+CoreDataProperties.swift */; };
+		5856644024461C6F00430A13 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5856643F24461C6F00430A13 /* CoreDataManager.swift */; };
 		587274B12444C02E009A8ED2 /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587274B02444C02E009A8ED2 /* MediaCell.swift */; };
 		587274B32444C06C009A8ED2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587274B22444C06C009A8ED2 /* HeaderView.swift */; };
 		587274B52444C40B009A8ED2 /* MediaObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587274B42444C40B009A8ED2 /* MediaObject.swift */; };
@@ -34,6 +35,7 @@
 		585664392446190500430A13 /* MediaFeedDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MediaFeedDataModel.xcdatamodel; sourceTree = "<group>"; };
 		5856643B24461BB700430A13 /* CDMediaObject+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDMediaObject+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5856643C24461BB700430A13 /* CDMediaObject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDMediaObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5856643F24461C6F00430A13 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		587274B02444C02E009A8ED2 /* MediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
 		587274B22444C06C009A8ED2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		587274B42444C40B009A8ED2 /* MediaObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaObject.swift; sourceTree = "<group>"; };
@@ -70,22 +72,55 @@
 		58501B5C2444B9E8006A90B4 /* AVFoundation-MediaFeed */ = {
 			isa = PBXGroup;
 			children = (
-				58501B612444B9E8006A90B4 /* MediaFeedNewsController.swift */,
+				5856644124461C8200430A13 /* Core Data */,
+				5856644224461CA100430A13 /* Supporting files */,
+				5856644324461D0900430A13 /* Views+Controllers+Storyboard */,
+				58C049AE24462006004D6234 /* Extensions */,
+				58501B6E2444B9EC006A90B4 /* Info.plist */,
+			);
+			path = "AVFoundation-MediaFeed";
+			sourceTree = "<group>";
+		};
+		5856644124461C8200430A13 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
 				5856643B24461BB700430A13 /* CDMediaObject+CoreDataClass.swift */,
 				5856643C24461BB700430A13 /* CDMediaObject+CoreDataProperties.swift */,
-				587274B42444C40B009A8ED2 /* MediaObject.swift */,
+				5856643F24461C6F00430A13 /* CoreDataManager.swift */,
 				585664382446190500430A13 /* MediaFeedDataModel.xcdatamodeld */,
-				58501B632444B9E8006A90B4 /* Main.storyboard */,
-				587274B02444C02E009A8ED2 /* MediaCell.swift */,
-				587274B22444C06C009A8ED2 /* HeaderView.swift */,
-				587274B62444EB55009A8ED2 /* URL+VideoPreviewThumbnail.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		5856644224461CA100430A13 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				58501B692444B9EC006A90B4 /* Assets.xcassets */,
 				58501B5D2444B9E8006A90B4 /* AppDelegate.swift */,
 				58501B5F2444B9E8006A90B4 /* SceneDelegate.swift */,
 				58501B6B2444B9EC006A90B4 /* LaunchScreen.storyboard */,
-				58501B6E2444B9EC006A90B4 /* Info.plist */,
 			);
-			path = "AVFoundation-MediaFeed";
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		5856644324461D0900430A13 /* Views+Controllers+Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				587274B42444C40B009A8ED2 /* MediaObject.swift */,
+				58501B612444B9E8006A90B4 /* MediaFeedNewsController.swift */,
+				587274B02444C02E009A8ED2 /* MediaCell.swift */,
+				58501B632444B9E8006A90B4 /* Main.storyboard */,
+				587274B22444C06C009A8ED2 /* HeaderView.swift */,
+			);
+			path = "Views+Controllers+Storyboard";
+			sourceTree = "<group>";
+		};
+		58C049AE24462006004D6234 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				587274B62444EB55009A8ED2 /* URL+VideoPreviewThumbnail.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +204,7 @@
 				58501B5E2444B9E8006A90B4 /* AppDelegate.swift in Sources */,
 				5856643D24461BB700430A13 /* CDMediaObject+CoreDataClass.swift in Sources */,
 				58501B602444B9E8006A90B4 /* SceneDelegate.swift in Sources */,
+				5856644024461C6F00430A13 /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
