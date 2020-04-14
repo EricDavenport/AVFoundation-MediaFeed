@@ -11,9 +11,11 @@
 		58501B602444B9E8006A90B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58501B5F2444B9E8006A90B4 /* SceneDelegate.swift */; };
 		58501B622444B9E8006A90B4 /* MediaFeedNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58501B612444B9E8006A90B4 /* MediaFeedNewsController.swift */; };
 		58501B652444B9E8006A90B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58501B632444B9E8006A90B4 /* Main.storyboard */; };
-		58501B682444B9E8006A90B4 /* AVFoundation_MediaFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58501B662444B9E8006A90B4 /* AVFoundation_MediaFeed.xcdatamodeld */; };
 		58501B6A2444B9EC006A90B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58501B692444B9EC006A90B4 /* Assets.xcassets */; };
 		58501B6D2444B9EC006A90B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58501B6B2444B9EC006A90B4 /* LaunchScreen.storyboard */; };
+		5856643A2446190500430A13 /* MediaFeedDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 585664382446190500430A13 /* MediaFeedDataModel.xcdatamodeld */; };
+		5856643D24461BB700430A13 /* CDMediaObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5856643B24461BB700430A13 /* CDMediaObject+CoreDataClass.swift */; };
+		5856643E24461BB700430A13 /* CDMediaObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5856643C24461BB700430A13 /* CDMediaObject+CoreDataProperties.swift */; };
 		587274B12444C02E009A8ED2 /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587274B02444C02E009A8ED2 /* MediaCell.swift */; };
 		587274B32444C06C009A8ED2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587274B22444C06C009A8ED2 /* HeaderView.swift */; };
 		587274B52444C40B009A8ED2 /* MediaObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587274B42444C40B009A8ED2 /* MediaObject.swift */; };
@@ -26,10 +28,12 @@
 		58501B5F2444B9E8006A90B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		58501B612444B9E8006A90B4 /* MediaFeedNewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFeedNewsController.swift; sourceTree = "<group>"; };
 		58501B642444B9E8006A90B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		58501B672444B9E8006A90B4 /* AVFoundation_MediaFeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AVFoundation_MediaFeed.xcdatamodel; sourceTree = "<group>"; };
 		58501B692444B9EC006A90B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58501B6C2444B9EC006A90B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58501B6E2444B9EC006A90B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		585664392446190500430A13 /* MediaFeedDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MediaFeedDataModel.xcdatamodel; sourceTree = "<group>"; };
+		5856643B24461BB700430A13 /* CDMediaObject+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDMediaObject+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5856643C24461BB700430A13 /* CDMediaObject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDMediaObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		587274B02444C02E009A8ED2 /* MediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
 		587274B22444C06C009A8ED2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		587274B42444C40B009A8ED2 /* MediaObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaObject.swift; sourceTree = "<group>"; };
@@ -66,18 +70,20 @@
 		58501B5C2444B9E8006A90B4 /* AVFoundation-MediaFeed */ = {
 			isa = PBXGroup;
 			children = (
-				58501B5D2444B9E8006A90B4 /* AppDelegate.swift */,
-				58501B5F2444B9E8006A90B4 /* SceneDelegate.swift */,
 				58501B612444B9E8006A90B4 /* MediaFeedNewsController.swift */,
-				587274B62444EB55009A8ED2 /* URL+VideoPreviewThumbnail.swift */,
+				5856643B24461BB700430A13 /* CDMediaObject+CoreDataClass.swift */,
+				5856643C24461BB700430A13 /* CDMediaObject+CoreDataProperties.swift */,
 				587274B42444C40B009A8ED2 /* MediaObject.swift */,
+				585664382446190500430A13 /* MediaFeedDataModel.xcdatamodeld */,
 				58501B632444B9E8006A90B4 /* Main.storyboard */,
 				587274B02444C02E009A8ED2 /* MediaCell.swift */,
 				587274B22444C06C009A8ED2 /* HeaderView.swift */,
+				587274B62444EB55009A8ED2 /* URL+VideoPreviewThumbnail.swift */,
 				58501B692444B9EC006A90B4 /* Assets.xcassets */,
+				58501B5D2444B9E8006A90B4 /* AppDelegate.swift */,
+				58501B5F2444B9E8006A90B4 /* SceneDelegate.swift */,
 				58501B6B2444B9EC006A90B4 /* LaunchScreen.storyboard */,
 				58501B6E2444B9EC006A90B4 /* Info.plist */,
-				58501B662444B9E8006A90B4 /* AVFoundation_MediaFeed.xcdatamodeld */,
 			);
 			path = "AVFoundation-MediaFeed";
 			sourceTree = "<group>";
@@ -154,12 +160,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				587274B52444C40B009A8ED2 /* MediaObject.swift in Sources */,
-				58501B682444B9E8006A90B4 /* AVFoundation_MediaFeed.xcdatamodeld in Sources */,
+				5856643A2446190500430A13 /* MediaFeedDataModel.xcdatamodeld in Sources */,
+				5856643E24461BB700430A13 /* CDMediaObject+CoreDataProperties.swift in Sources */,
 				587274B32444C06C009A8ED2 /* HeaderView.swift in Sources */,
 				58501B622444B9E8006A90B4 /* MediaFeedNewsController.swift in Sources */,
 				587274B12444C02E009A8ED2 /* MediaCell.swift in Sources */,
 				587274B72444EB55009A8ED2 /* URL+VideoPreviewThumbnail.swift in Sources */,
 				58501B5E2444B9E8006A90B4 /* AppDelegate.swift in Sources */,
+				5856643D24461BB700430A13 /* CDMediaObject+CoreDataClass.swift in Sources */,
 				58501B602444B9E8006A90B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,13 +368,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		58501B662444B9E8006A90B4 /* AVFoundation_MediaFeed.xcdatamodeld */ = {
+		585664382446190500430A13 /* MediaFeedDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				58501B672444B9E8006A90B4 /* AVFoundation_MediaFeed.xcdatamodel */,
+				585664392446190500430A13 /* MediaFeedDataModel.xcdatamodel */,
 			);
-			currentVersion = 58501B672444B9E8006A90B4 /* AVFoundation_MediaFeed.xcdatamodel */;
-			path = AVFoundation_MediaFeed.xcdatamodeld;
+			currentVersion = 585664392446190500430A13 /* MediaFeedDataModel.xcdatamodel */;
+			path = MediaFeedDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

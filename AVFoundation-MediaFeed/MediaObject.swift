@@ -9,7 +9,7 @@
 import Foundation
 
 // mediaObject instance can either be a video or an image content
-struct MediaObject {
+struct MediaObject: Codable {
   let imageData: Data?
   let videoURL: URL?
   let caption: String?  // UI so user can enter text
