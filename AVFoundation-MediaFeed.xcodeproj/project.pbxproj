@@ -21,6 +21,7 @@
 		587274B32444C06C009A8ED2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587274B22444C06C009A8ED2 /* HeaderView.swift */; };
 		587274B52444C40B009A8ED2 /* MediaObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587274B42444C40B009A8ED2 /* MediaObject.swift */; };
 		587274B72444EB55009A8ED2 /* URL+VideoPreviewThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587274B62444EB55009A8ED2 /* URL+VideoPreviewThumbnail.swift */; };
+		58C78C5D244751FB006322B6 /* Data+ConvertToURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C78C5C244751FB006322B6 /* Data+ConvertToURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		587274B22444C06C009A8ED2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		587274B42444C40B009A8ED2 /* MediaObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaObject.swift; sourceTree = "<group>"; };
 		587274B62444EB55009A8ED2 /* URL+VideoPreviewThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+VideoPreviewThumbnail.swift"; sourceTree = "<group>"; };
+		58C78C5C244751FB006322B6 /* Data+ConvertToURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+ConvertToURL.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		58C049AE24462006004D6234 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				58C78C5C244751FB006322B6 /* Data+ConvertToURL.swift */,
 				587274B62444EB55009A8ED2 /* URL+VideoPreviewThumbnail.swift */,
 			);
 			path = Extensions;
@@ -200,6 +203,7 @@
 				587274B32444C06C009A8ED2 /* HeaderView.swift in Sources */,
 				58501B622444B9E8006A90B4 /* MediaFeedNewsController.swift in Sources */,
 				587274B12444C02E009A8ED2 /* MediaCell.swift in Sources */,
+				58C78C5D244751FB006322B6 /* Data+ConvertToURL.swift in Sources */,
 				587274B72444EB55009A8ED2 /* URL+VideoPreviewThumbnail.swift in Sources */,
 				58501B5E2444B9E8006A90B4 /* AppDelegate.swift in Sources */,
 				5856643D24461BB700430A13 /* CDMediaObject+CoreDataClass.swift in Sources */,
